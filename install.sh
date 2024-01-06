@@ -26,6 +26,15 @@ install_gitleaks() {
         fi
 }
 
+# Checking if Python is installed
+    if ! command -v python &>/dev/null; then
+        echo "Error: Python is not installed. Please install Python before running this script."
+        exit 1
+    fi
+
+ # Install pre-commit
+    pip install pre-commit
+
 # Checking if gitleaks is installed
 if ! command -v gitleaks &>/dev/null; then
   read -p "Gitleaks is not installed. Do you want to install it? (yes/no): " choice
