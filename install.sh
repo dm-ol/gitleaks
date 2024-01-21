@@ -33,7 +33,9 @@ install_gitleaks() {
     fi
 
  # Install pre-commit
-    pip install pre-commit
+ python3 -m venv venv
+ source venv/bin/activate
+ pip install pre-commit
 
 # Checking if gitleaks is installed
 if ! command -v gitleaks &>/dev/null; then
