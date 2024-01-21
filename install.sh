@@ -27,7 +27,7 @@ install_gitleaks() {
 }
 
 # Checking if Python is installed
-    if ! command -v python &>/dev/null; then
+    if ! command -v python3 &>/dev/null; then
         echo "Error: Python is not installed. Please install Python before running this script."
         exit 1
     fi
