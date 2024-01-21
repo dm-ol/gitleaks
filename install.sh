@@ -35,7 +35,6 @@ install_gitleaks() {
  # Install pre-commit
  python3 -m venv venv
  source venv/bin/activate
- activate_venv
  pip install pre-commit
 
 # Checking if gitleaks is installed
